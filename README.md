@@ -4,7 +4,7 @@
 
 - ✔ Atualmente trabalho com desenvolvimento de aplicações Front-End e construção de API'S Rest (A maioria dos repositórios em que contribuo/contribuí são de organizações, portanto, privados)
 - 🧪 Estudando React/Redux
-- 💬 Email.: Victorbarros28@gmail.com 
+- 💬 Contato .: Victorbarros28@gmail.com / (81)99639-6522  
 - <a href="https://www.linkedin.com/in/victorgbarros/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 
 ##
