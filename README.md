@@ -16,7 +16,7 @@
 
 ### `$ whoami`
 
-Há mais de 5 anos construo e mantenho, de ponta a ponta (requisito, código, deploy e sustentação), os **robôs RPA e as integrações** que tiram trabalho repetitivo das mãos de advogados. São cadastros de processos, andamentos, diligências, audiências, prazos e honorários, rodando todo dia contra sistemas jurídicos de clientes, portais de tribunais e o JUS.br.
+Há mais de 5 anos construo e mantenho, de ponta a ponta (requisito, código, deploy e sustentação), os **robôs RPA e as integrações** que tiram trabalho repetitivo das mãos de advogados. São cadastros de processos, andamentos, diligências, audiências, prazos e honorários, rodando todo dia contra sistemas jurídicos de clientes e portais de tribunais.
 
 Meu trabalho vai da raspagem que precisa sobreviver a um login com SSO e TOTP à tela em React onde o operador vê, em tempo real, o que deu certo, o que falhou e por quê.
 
@@ -35,7 +35,7 @@ timeline
     2021 : Urbano Vitalino Advogados · primeiros sistemas front-end jurídicos e cadastro cível
     2023-2024 : Robôs de cadastro e andamentos em sistemas de clientes
     2025 : Decisões, honorários e integrações por API · 100+ commits no ano
-    2026 : RPA Monitor em tempo real · Central de Andamentos no JUS.br · TCC MAXSTAT IA
+    2026 : RPA Monitor em tempo real · Central de Andamentos (SpiderJUS) nos portais de tribunais · TCC MAXSTAT IA
 ```
 
 ---
@@ -48,7 +48,7 @@ timeline
 flowchart LR
     subgraph Fontes["🌐 Fontes externas"]
         A1[Sistemas jurídicos<br/>dos clientes]
-        A2[Portais de tribunais<br/>JUS.br / CNJ]
+        A2[Portais de<br/>tribunais]
         A3[E-mails, planilhas<br/>e APIs de parceiros]
     end
 
@@ -89,10 +89,10 @@ Back em **Django + DRF + Channels** e front em **React 19 + TypeScript + Vite + 
 </details>
 
 <details>
-<summary><b>🕷️ Central de Andamentos (SpiderJUS)</b>: crawler de andamentos no JUS.br</summary>
+<summary><b>🕷️ Central de Andamentos (SpiderJUS)</b>: crawler de andamentos em portais de tribunais</summary>
 <br/>
 
-Robô em **Playwright + CloakBrowser** que lê andamentos processuais em lote a partir de planilhas, com detecção de bloqueio, paginação, retorno em `.xlsx` e alertas quando a API pública fica instável. Deploy em containers na AWS (ECS).
+Robô em **Playwright + CloakBrowser** que lê andamentos processuais em lote a partir de planilhas, com detecção de bloqueio, paginação, retorno em `.xlsx` e alertas quando o portal do tribunal fica instável. Deploy em containers na AWS (ECS).
 
 </details>
 

@@ -8,7 +8,7 @@
 <text class="l2" x="24" y="114" fill="#e6edf3"><tspan fill="#e11d48">$ </tspan>celery -A config worker -Q andamentos --concurrency 4</text>
 <text class="l3" x="24" y="140" fill="#8b949e">[tasks] rodada_andamentos · conferir_na_fonte · destravar_rodadas</text>
 <text class="l4" x="24" y="166" fill="#79c0ff">→ login SSO no portal do cliente ........ ok (TOTP)</text>
-<text class="l5" x="24" y="192" fill="#79c0ff">→ planilha #15 · 9.884 itens · Elaw ↔ JUS.br</text>
+<text class="l5" x="24" y="192" fill="#79c0ff">→ planilha #15 · 9.884 itens · Elaw ↔ portal do tribunal</text>
 <text class="l6" x="24" y="218" fill="#d29922">⚠ TimeoutException no portal → retry 2/3 · sessão renovada</text>
 <text class="l7" x="24" y="244" fill="#e6edf3">→ processando  ███████████████░░░░░  7.412 / 9.884</text>
 <text class="l8" x="24" y="270" fill="#3fb950">✔ monitor-signals → RPA Monitor (WebSocket) · item_ok</text>
