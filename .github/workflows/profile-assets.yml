@@ -18,7 +18,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Gráfico 3D de contribuições
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        # fixado em commit (tag 0.7.1): esta Action recebe o PROFILE_TOKEN
+        uses: yoshi389111/github-profile-3d-contrib@fd54cf20784ed9a86dc7be48bb5eb1f74e92b4f8
         env:
           # PROFILE_TOKEN (PAT com leitura dos repos privados) faz o gráfico de linguagens
           # enxergar os repositórios da organização; sem ele, só os públicos entram.
