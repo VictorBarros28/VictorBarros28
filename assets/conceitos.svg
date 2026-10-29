@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="358" viewBox="0 0 820 358" role="img" aria-label="Conceitos de engenharia de software que aplico no dia a dia">
+<style>
+text{font-family:'Segoe UI',Inter,Helvetica,Arial,sans-serif}
+.n{font:600 13px 'JetBrains Mono',Consolas,monospace;fill:#e11d48}
+.t{font-size:17px;font-weight:700;fill:#e6edf3}
+.i{font-size:13.5px;fill:#9da7b3}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.c0{opacity:0;animation:in .6s ease-out 0.00s forwards}.c1{opacity:0;animation:in .6s ease-out 0.12s forwards}.c2{opacity:0;animation:in .6s ease-out 0.24s forwards}.c3{opacity:0;animation:in .6s ease-out 0.36s forwards}.c4{opacity:0;animation:in .6s ease-out 0.48s forwards}.c5{opacity:0;animation:in .6s ease-out 0.60s forwards}
+</style>
+<g class="c0">
+<rect x="1" y="1" width="256" height="168" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="1" y="19" width="3" height="22" rx="1.5" fill="#e11d48"/>
+<text x="21" y="36" class="n">01</text>
+<text x="49" y="36" class="t">Arquitetura</text>
+<line x1="21" y1="55" x2="237" y2="55" stroke="#21262d"/>
+<circle cx="25" cy="77" r="2.5" fill="#e11d48"/>
+<text x="37" y="81" class="i">APIs REST</text>
+<circle cx="25" cy="101" r="2.5" fill="#e11d48"/>
+<text x="37" y="105" class="i">Filas e processamento assíncrono</text>
+<circle cx="25" cy="125" r="2.5" fill="#e11d48"/>
+<text x="37" y="129" class="i">Agendamento de tarefas</text>
+<circle cx="25" cy="149" r="2.5" fill="#e11d48"/>
+<text x="37" y="153" class="i">Tempo real: WebSocket e SSE</text>
+</g>
+<g class="c1">
+<rect x="280" y="1" width="256" height="168" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="280" y="19" width="3" height="22" rx="1.5" fill="#e11d48"/>
+<text x="300" y="36" class="n">02</text>
+<text x="328" y="36" class="t">Confiabilidade</text>
+<line x1="300" y1="55" x2="516" y2="55" stroke="#21262d"/>
+<circle cx="304" cy="77" r="2.5" fill="#e11d48"/>
+<text x="316" y="81" class="i">Retentativas com backoff</text>
+<circle cx="304" cy="101" r="2.5" fill="#e11d48"/>
+<text x="316" y="105" class="i">Idempotência</text>
+<circle cx="304" cy="125" r="2.5" fill="#e11d48"/>
+<text x="316" y="129" class="i">Reprocessamento seguro</text>
+<circle cx="304" cy="149" r="2.5" fill="#e11d48"/>
+<text x="316" y="153" class="i">Reconciliação com a fonte</text>
+</g>
+<g class="c2">
+<rect x="559" y="1" width="256" height="168" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="559" y="19" width="3" height="22" rx="1.5" fill="#e11d48"/>
+<text x="579" y="36" class="n">03</text>
+<text x="607" y="36" class="t">Automação</text>
+<line x1="579" y1="55" x2="795" y2="55" stroke="#21262d"/>
+<circle cx="583" cy="77" r="2.5" fill="#e11d48"/>
+<text x="595" y="81" class="i">RPA e web scraping</text>
+<circle cx="583" cy="101" r="2.5" fill="#e11d48"/>
+<text x="595" y="105" class="i">Navegadores headless</text>
+<circle cx="583" cy="125" r="2.5" fill="#e11d48"/>
+<text x="595" y="129" class="i">SSO, TOTP e passkey</text>
+<circle cx="583" cy="149" r="2.5" fill="#e11d48"/>
+<text x="595" y="153" class="i">APIs e equipamentos externos</text>
+</g>
+<g class="c3">
+<rect x="1" y="189" width="256" height="168" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="1" y="207" width="3" height="22" rx="1.5" fill="#e11d48"/>
+<text x="21" y="224" class="n">04</text>
+<text x="49" y="224" class="t">DevOps</text>
+<line x1="21" y1="243" x2="237" y2="243" stroke="#21262d"/>
+<circle cx="25" cy="265" r="2.5" fill="#e11d48"/>
+<text x="37" y="269" class="i">Docker e Compose</text>
+<circle cx="25" cy="289" r="2.5" fill="#e11d48"/>
+<text x="37" y="293" class="i">CI/CD com GitHub Actions</text>
+<circle cx="25" cy="313" r="2.5" fill="#e11d48"/>
+<text x="37" y="317" class="i">AWS e GCP</text>
+<circle cx="25" cy="337" r="2.5" fill="#e11d48"/>
+<text x="37" y="341" class="i">Kubernetes</text>
+</g>
+<g class="c4">
+<rect x="280" y="189" width="256" height="168" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="280" y="207" width="3" height="22" rx="1.5" fill="#e11d48"/>
+<text x="300" y="224" class="n">05</text>
+<text x="328" y="224" class="t">Front-end</text>
+<line x1="300" y1="243" x2="516" y2="243" stroke="#21262d"/>
+<circle cx="304" cy="265" r="2.5" fill="#e11d48"/>
+<text x="316" y="269" class="i">SPA com React e TypeScript</text>
+<circle cx="304" cy="289" r="2.5" fill="#e11d48"/>
+<text x="316" y="293" class="i">Design system acessível</text>
+<circle cx="304" cy="313" r="2.5" fill="#e11d48"/>
+<text x="316" y="317" class="i">Dashboards e visualização</text>
+<circle cx="304" cy="337" r="2.5" fill="#e11d48"/>
+<text x="316" y="341" class="i">Componentes reutilizáveis</text>
+</g>
+<g class="c5">
+<rect x="559" y="189" width="256" height="168" rx="12" fill="#0d1117" stroke="#30363d"/>
+<rect x="559" y="207" width="3" height="22" rx="1.5" fill="#e11d48"/>
+<text x="579" y="224" class="n">06</text>
+<text x="607" y="224" class="t">Processo</text>
+<line x1="579" y1="243" x2="795" y2="243" stroke="#21262d"/>
+<circle cx="583" cy="265" r="2.5" fill="#e11d48"/>
+<text x="595" y="269" class="i">Conventional Commits</text>
+<circle cx="583" cy="289" r="2.5" fill="#e11d48"/>
+<text x="595" y="293" class="i">Pull requests e code review</text>
+<circle cx="583" cy="313" r="2.5" fill="#e11d48"/>
+<text x="595" y="317" class="i">Metodologias ágeis</text>
+<circle cx="583" cy="337" r="2.5" fill="#e11d48"/>
+<text x="595" y="341" class="i">Documentação técnica</text>
+</g>
+</svg>

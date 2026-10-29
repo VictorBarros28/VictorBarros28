@@ -26,43 +26,9 @@ Desenvolvedor fullstack há mais de 5 anos, cuidando do ciclo inteiro: levantame
 
 ### 🧠 O que eu aplico no dia a dia
 
-> Mapa interativo: dá para ampliar e arrastar direto no GitHub.
-
-```mermaid
-mindmap
-  root((Engenharia<br/>de Software))
-    Arquitetura
-      APIs REST
-      Processamento assíncrono com filas
-      Agendamento de tarefas
-      Tempo real com WebSocket e SSE
-      Front e back desacoplados
-    Confiabilidade
-      Retentativas com backoff
-      Idempotência
-      Reprocessamento seguro
-      Reconciliação de dados com a fonte
-      Logs e observabilidade
-    Automação
-      RPA e web scraping
-      Navegadores headless
-      Autenticação SSO, TOTP e passkey
-      Integração com equipamentos e APIs de terceiros
-    DevOps
-      Docker e Compose
-      CI/CD com GitHub Actions
-      Cloud AWS e GCP
-      Kubernetes
-    Front-end
-      SPA com React e TypeScript
-      Design system e componentes acessíveis
-      Dashboards e visualização de dados
-    Processo
-      Conventional Commits
-      Pull requests e code review
-      Metodologias ágeis
-      Documentação técnica
-```
+<div align="center">
+  <img src="./assets/conceitos.svg" alt="Arquitetura, confiabilidade, automação, DevOps, front-end e processo" width="100%" />
+</div>
 
 ---
 
