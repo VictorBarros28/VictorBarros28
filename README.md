@@ -33,16 +33,16 @@ timeline
     2018 : Início de Engenharia da Computação na Poli/UPE
     2020 : Poli Júnior · front-end, sistemas de gestão e e-commerce para pequenas empresas
     2021 : Urbano Vitalino Advogados · primeiros sistemas front-end jurídicos e cadastro cível
-    2023-2024 : Robôs de cadastro e andamentos em sistemas de clientes · triagem de publicações com NLP
+    2023-2024 : Robôs de cadastro e andamentos em sistemas de clientes
     2025 : Decisões, honorários e integrações por API · 100+ commits no ano
-    2026 : RPA Monitor em tempo real · Central de Andamentos no JUS.br · migração dos robôs para nova plataforma
+    2026 : RPA Monitor em tempo real · Central de Andamentos no JUS.br · TCC MAXSTAT IA
 ```
 
 ---
 
-### 🧭 Como as peças se encaixam
+### 📡 Do portal do cliente à tela do operador
 
-> Diagrama interativo: dá para ampliar e arrastar direto no GitHub.
+> O caminho de cada item processado: o robô colhe na fonte, grava no Postgres e avisa o monitor. Quando alguém clica em **Retentar** ou **Conferir na fonte**, o item volta para a fila.
 
 ```mermaid
 flowchart LR
@@ -105,15 +105,23 @@ Automação de login com **SSO, TOTP (`pyotp`) e passkey/WebAuthn**, renovação
 </details>
 
 <details>
-<summary><b>🧯 Caso real: a rodada que morria na sexta hora</b></summary>
+<summary><b>🧪 MAXSTAT IA</b>: rastreabilidade de fermentação industrial (TCC · Poli/UPE)</summary>
 <br/>
 
-Uma rodada de ~10 mil andamentos terminava sempre com milhares de itens em `Rodada interrompida`. A causa estava em dois lugares:
+Plataforma web full-stack que tira do papel e da planilha o registro de lotes de um processo de **fermentação industrial**. Ela junta dois espectrômetros NIR de fabricantes diferentes numa única interface:
 
-1. o robô caía inteiro quando o login falhava 3× seguidas num reinício;
-2. o "destrave" do monitor tinha um **teto fixo de 6h** e encerrava rodadas legítimas que ainda devolviam linhas.
+- **FOSS**: os resultados chegam em CSV e são capturados por um observador de diretório (`watchdog`).
+- **BUCHI**: os espectros vêm direto pela API do fabricante.
 
-A correção foi feita nos dois repositórios: login resiliente com diagnóstico por etapa e um destrave que olha **progresso**, não relógio. Depois disso, os itens foram reprocessados com acompanhamento ao vivo pelo monitor.
+Como o sistema foi construído:
+
+- **Back-end** em Django REST Framework, com 11 endpoints, autenticação por token (Knox) e **Server-Sent Events** para avisar a tela do operador no instante em que a amostra é classificada.
+- **Front-end** em React com dois perfis de uso:
+  - **Operador de chão de fábrica**: recebe a classificação automaticamente e é guiado no preenchimento dos dados complementares.
+  - **Supervisor**: histórico paginado com filtros, detalhe de cada lote, exportação em XLSX e gráfico da evolução do teor de água por carro.
+- **Distribuição** de duas formas: um **executável Windows** que embarca Python, Django e o build do React, sem instalar nada na máquina, ou containers via Docker Compose.
+
+Com isso, os lotes passam a ter registro auditável e rastreável, deixam de existir erros de transcrição manual e fica pavimentado o caminho para conformidade com ANVISA e ISO.
 
 </details>
 
@@ -121,7 +129,6 @@ A correção foi feita nos dois repositórios: login resiliente com diagnóstico
 <summary><b>🧠 Outros</b></summary>
 <br/>
 
-- **Publicações**: triagem de publicações jurídicas com NLP (`sentence-transformers`, NLTK) e dados do Redshift.
 - **Honorários**: pipeline de faturamento com leitura de e-mail (IMAP), PDFs (PyMuPDF), exportação em XLSX e AWS Lambda.
 - **Integrações por API**: cadastro automático de processos entre o sistema do escritório e plataformas de parceiros, com Celery Beat e reprocessamento por data.
 - [`simulado-cpa`](https://github.com/VictorBarros28/simulado-cpa): simulado gamificado da certificação CPA da ANBIMA, em um único HTML, com XP e sequências.
