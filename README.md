@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/VictorBarros28">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2800&pause=900&color=E11D48&center=true&vCenter=true&width=720&lines=Ol%C3%A1%2C+eu+sou+o+Victor+%F0%9F%91%8B;Automa%C3%A7%C3%A3o+jur%C3%ADdica+em+produ%C3%A7%C3%A3o;Python+%C2%B7+Django+%C2%B7+Celery+%C2%B7+React;Rob%C3%B4s+que+rodam+enquanto+o+escrit%C3%B3rio+dorme" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2800&pause=900&color=E11D48&center=true&vCenter=true&width=720&lines=Ol%C3%A1%2C+eu+sou+o+Victor+%F0%9F%91%8B;Desenvolvedor+Fullstack;Python+%C2%B7+Django+%C2%B7+Celery+%C2%B7+React;Automa%C3%A7%C3%A3o%2C+integra%C3%A7%C3%B5es+e+tempo+real" alt="Typing SVG" />
 </a>
 
 **Victor Guilherme Barros** · Desenvolvedor Fullstack na [Urbano Vitalino Advogados](https://github.com/Urbano-Vitalino-Advogados) · Engenharia da Computação na Poli/UPE · Recife, PE
@@ -16,13 +16,109 @@
 
 ### `$ whoami`
 
-Há mais de 5 anos construo e mantenho, de ponta a ponta (requisito, código, deploy e sustentação), os **robôs RPA e as integrações** que tiram trabalho repetitivo das mãos de advogados. São cadastros de processos, andamentos, diligências, audiências, prazos e honorários, rodando todo dia contra sistemas jurídicos de clientes e portais de tribunais.
-
-Meu trabalho vai da raspagem que precisa sobreviver a um login com SSO e TOTP à tela em React onde o operador vê, em tempo real, o que deu certo, o que falhou e por quê.
+Desenvolvedor fullstack há mais de 5 anos, cuidando do ciclo inteiro: levantamento de requisitos, código, deploy e sustentação em produção. Meu foco são **automação de processos (RPA e web scraping)**, **integrações entre sistemas** e **aplicações web em tempo real**, com Python no back-end e React no front-end.
 
 <div align="center">
-  <img src="./assets/terminal.svg" alt="Robô RPA rodando em produção" width="100%" />
+  <img src="./assets/terminal.svg" alt="Terminal animado: commit, deploy com Docker e worker Celery processando um lote" width="100%" />
 </div>
+
+---
+
+### 🧠 O que eu aplico no dia a dia
+
+> Mapa interativo: dá para ampliar e arrastar direto no GitHub.
+
+```mermaid
+mindmap
+  root((Engenharia<br/>de Software))
+    Arquitetura
+      APIs REST
+      Processamento assíncrono com filas
+      Agendamento de tarefas
+      Tempo real com WebSocket e SSE
+      Front e back desacoplados
+    Confiabilidade
+      Retentativas com backoff
+      Idempotência
+      Reprocessamento seguro
+      Reconciliação de dados com a fonte
+      Logs e observabilidade
+    Automação
+      RPA e web scraping
+      Navegadores headless
+      Autenticação SSO, TOTP e passkey
+      Integração com equipamentos e APIs de terceiros
+    DevOps
+      Docker e Compose
+      CI/CD com GitHub Actions
+      Cloud AWS e GCP
+      Kubernetes
+    Front-end
+      SPA com React e TypeScript
+      Design system e componentes acessíveis
+      Dashboards e visualização de dados
+    Processo
+      Conventional Commits
+      Pull requests e code review
+      Metodologias ágeis
+      Documentação técnica
+```
+
+---
+
+### 🧰 Stack
+
+<div align="center">
+
+**Linguagens**<br/>
+<img src="https://skillicons.dev/icons?i=python,ts,js,html,css&theme=dark" />
+
+**Back-end**<br/>
+<img src="https://skillicons.dev/icons?i=django,redis,postgres,mongodb,sqlite&theme=dark" /><br/>
+<img src="https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" />
+<img src="https://img.shields.io/badge/Django_Channels-092E20?style=flat-square&logo=django&logoColor=white" />
+
+**Automação e dados**<br/>
+<img src="https://skillicons.dev/icons?i=selenium&theme=dark" />
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" />
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" />
+
+**Front-end**<br/>
+<img src="https://skillicons.dev/icons?i=react,vite,tailwind,vue&theme=dark" />
+
+**Infra e ferramentas**<br/>
+<img src="https://skillicons.dev/icons?i=docker,aws,gcp,kubernetes,linux,githubactions,git&theme=dark" />
+<img src="https://img.shields.io/badge/Portainer-13BEF9?style=flat-square&logo=portainer&logoColor=white" />
+
+</div>
+
+---
+
+### 🛠️ Projetos em destaque
+
+| Projeto | O que é | Tecnologias e conceitos |
+|---|---|---|
+| **RPA Monitor** | Central de monitoramento em tempo real das automações da empresa | Django, DRF, Channels (WebSocket), React, TypeScript, Tailwind, observabilidade, reconciliação de dados |
+| **Robôs RPA** | Família de automações de cadastro e coleta de dados em sistemas externos | Selenium, Playwright, Celery, Redis, PostgreSQL, Docker, retentativas e idempotência |
+| **SpiderJUS** | Coleta de andamentos processuais em lote em portais de tribunais | Playwright, Celery, AWS ECS e S3, paginação, detecção de bloqueio |
+| **Integrações por API** | Sincronização automática de dados entre sistemas internos e de parceiros | REST, Celery Beat, Lambda, processamento de planilhas e PDFs |
+| **MAXSTAT IA** · *TCC* | Plataforma de rastreabilidade de processos de fermentação industrial | DRF, React, Server-Sent Events, Knox, integração com equipamentos, Docker e executável desktop |
+| [**simulado-cpa**](https://github.com/VictorBarros28/simulado-cpa) | Simulado gamificado da certificação CPA da ANBIMA | HTML, CSS e JavaScript puros, arquivo único |
+
+<details>
+<summary><b>🧪 Mais sobre o MAXSTAT IA</b></summary>
+<br/>
+
+Meu TCC de Engenharia da Computação. É uma aplicação full-stack que substitui registros manuais de laboratório por um fluxo digital e auditável:
+
+- reúne em uma única interface dados vindos de dois equipamentos diferentes, um por leitura de arquivos monitorados e outro por API do fabricante;
+- avisa o usuário em tempo real (SSE) assim que uma nova leitura chega;
+- oferece telas distintas por perfil de usuário, com histórico, filtros, exportação e gráficos;
+- é distribuída como executável Windows autocontido ou via Docker Compose.
+
+</details>
 
 ---
 
@@ -31,130 +127,12 @@ Meu trabalho vai da raspagem que precisa sobreviver a um login com SSO e TOTP à
 ```mermaid
 timeline
     2018 : Início de Engenharia da Computação na Poli/UPE
-    2020 : Poli Júnior · front-end, sistemas de gestão e e-commerce para pequenas empresas
-    2021 : Urbano Vitalino Advogados · primeiros sistemas front-end jurídicos e cadastro cível
-    2023-2024 : Robôs de cadastro e andamentos em sistemas de clientes
-    2025 : Decisões, honorários e integrações por API · 100+ commits no ano
-    2026 : RPA Monitor em tempo real · Central de Andamentos (SpiderJUS) nos portais de tribunais · TCC MAXSTAT IA
+    2020 : Poli Júnior · front-end, sistemas de gestão e e-commerce
+    2021 : Urbano Vitalino Advogados · Desenvolvedor Fullstack
+    2023-2024 : Automações RPA e integrações em produção
+    2025 : Integrações por API e cloud · 100+ commits no ano
+    2026 : Plataforma de monitoramento em tempo real · TCC MAXSTAT IA
 ```
-
----
-
-### 📡 Do portal do cliente à tela do operador
-
-> O caminho de cada item processado: o robô colhe na fonte, grava no Postgres e avisa o monitor. Quando alguém clica em **Retentar** ou **Conferir na fonte**, o item volta para a fila.
-
-```mermaid
-flowchart LR
-    subgraph Fontes["🌐 Fontes externas"]
-        A1[Sistemas jurídicos<br/>dos clientes]
-        A2[Portais de<br/>tribunais]
-        A3[E-mails, planilhas<br/>e APIs de parceiros]
-    end
-
-    subgraph Robos["🤖 Robôs · Django + Celery"]
-        B1[Workers Selenium /<br/>Playwright / CloakBrowser]
-        B2[(PostgreSQL)]
-        B3[[Redis · filas]]
-    end
-
-    subgraph Monitor["📡 RPA Monitor"]
-        C1[API Django + DRF]
-        C2[Channels · WebSocket]
-        C3[Front React + TS]
-    end
-
-    A1 & A2 & A3 <--> B1
-    B3 --> B1 --> B2
-    B1 -- monitor-signals --> C1
-    C1 --> C2 --> C3
-    C3 -- retentar / conferir na fonte --> C1 --> B3
-    B1 -. arquivos .-> S3[(AWS S3)]
-```
-
----
-
-### 🛠️ Projetos que mais me orgulham
-
-<details open>
-<summary><b>📡 RPA Monitor</b>: central em tempo real de todas as automações do escritório</summary>
-<br/>
-
-Back em **Django + DRF + Channels** e front em **React 19 + TypeScript + Vite + Tailwind + Radix + Framer Motion**. Mais de 20 operações de clientes reportam ali via um pacote interno (`monitor-signals`) que instrumenta cada robô.
-
-- **Conferir na fonte**: compara o volume processado pelo robô com o que existe na origem e explica cada diferença (lançamento tardio, já processado, fora do critério). Virou o padrão de validação das automações.
-- **Retentar pelo front**: refaz busca, download e envio para um item ou uma rodada inteira, preservando período e horário da execução original.
-- Sincronização automática de planilhas, grupos de acesso por cliente e banner de indisponibilidade quando um portal externo cai.
-
-</details>
-
-<details>
-<summary><b>🕷️ Central de Andamentos (SpiderJUS)</b>: crawler de andamentos em portais de tribunais</summary>
-<br/>
-
-Robô em **Playwright + CloakBrowser** que lê andamentos processuais em lote a partir de planilhas, com detecção de bloqueio, paginação, retorno em `.xlsx` e alertas quando o portal do tribunal fica instável. Deploy em containers na AWS (ECS).
-
-</details>
-
-<details>
-<summary><b>🔐 Robôs que sobrevivem a login hostil</b></summary>
-<br/>
-
-Automação de login com **SSO, TOTP (`pyotp`) e passkey/WebAuthn**, renovação de sessão no meio de rodadas longas, captcha e retentativa por item. Quando o login cai, a mensagem diz em qual passo do SSO ele travou.
-
-</details>
-
-<details>
-<summary><b>🧪 MAXSTAT IA</b>: rastreabilidade de fermentação industrial (TCC · Poli/UPE)</summary>
-<br/>
-
-Plataforma web full-stack que tira do papel e da planilha o registro de lotes de um processo de **fermentação industrial**. Ela junta dois espectrômetros NIR de fabricantes diferentes numa única interface:
-
-- **FOSS**: os resultados chegam em CSV e são capturados por um observador de diretório (`watchdog`).
-- **BUCHI**: os espectros vêm direto pela API do fabricante.
-
-Como o sistema foi construído:
-
-- **Back-end** em Django REST Framework, com 11 endpoints, autenticação por token (Knox) e **Server-Sent Events** para avisar a tela do operador no instante em que a amostra é classificada.
-- **Front-end** em React com dois perfis de uso:
-  - **Operador de chão de fábrica**: recebe a classificação automaticamente e é guiado no preenchimento dos dados complementares.
-  - **Supervisor**: histórico paginado com filtros, detalhe de cada lote, exportação em XLSX e gráfico da evolução do teor de água por carro.
-- **Distribuição** de duas formas: um **executável Windows** que embarca Python, Django e o build do React, sem instalar nada na máquina, ou containers via Docker Compose.
-
-Com isso, os lotes passam a ter registro auditável e rastreável, deixam de existir erros de transcrição manual e fica pavimentado o caminho para conformidade com ANVISA e ISO.
-
-</details>
-
-<details>
-<summary><b>🧠 Outros</b></summary>
-<br/>
-
-- **Honorários**: pipeline de faturamento com leitura de e-mail (IMAP), PDFs (PyMuPDF), exportação em XLSX e AWS Lambda.
-- **Integrações por API**: cadastro automático de processos entre o sistema do escritório e plataformas de parceiros, com Celery Beat e reprocessamento por data.
-- [`simulado-cpa`](https://github.com/VictorBarros28/simulado-cpa): simulado gamificado da certificação CPA da ANBIMA, em um único HTML, com XP e sequências.
-
-</details>
-
----
-
-### 🧰 Stack do dia a dia
-
-<div align="center">
-
-**Back-end e automação**<br/>
-<img src="https://skillicons.dev/icons?i=python,django,redis,postgres,mongodb,selenium&theme=dark" />
-<img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" />
-<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" />
-<img src="https://img.shields.io/badge/DRF-A30000?style=flat-square&logo=django&logoColor=white" />
-
-**Front-end**<br/>
-<img src="https://skillicons.dev/icons?i=react,ts,vite,tailwind,vue&theme=dark" />
-
-**Infra**<br/>
-<img src="https://skillicons.dev/icons?i=docker,aws,gcp,kubernetes,linux,githubactions,git&theme=dark" />
-<img src="https://img.shields.io/badge/Portainer-13BEF9?style=flat-square&logo=portainer&logoColor=white" />
-
-</div>
 
 ---
 
@@ -189,7 +167,7 @@ Com isso, os lotes passam a ter registro auditável e rastreável, deixam de exi
 <summary>🇺🇸 <b>English summary</b></summary>
 <br/>
 
-Full-stack developer with 5+ years at a Brazilian law firm, building and running **production RPA and integrations** with Python, Django, Celery, Redis, PostgreSQL, Selenium and Playwright, plus a **real-time monitoring platform** (Django Channels + React/TypeScript) that tracks every automation, reconciles processed volume against the source and lets operators retry from the UI. Computer Engineering student at Poli/UPE, based in Recife, Brazil.
+Full-stack developer with 5+ years of experience owning the whole cycle, from requirements to production support. I focus on **process automation (RPA and web scraping)**, **system integrations** and **real-time web applications**, using Python, Django, Celery, Redis and PostgreSQL on the back end, React and TypeScript on the front end, and Docker, GitHub Actions and AWS for delivery. Computer Engineering at Poli/UPE, based in Recife, Brazil.
 
 </details>
 

@@ -20,7 +20,9 @@ jobs:
       - name: Gráfico 3D de contribuições
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PROFILE_TOKEN (PAT com leitura dos repos privados) faz o gráfico de linguagens
+          # enxergar os repositórios da organização; sem ele, só os públicos entram.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: Cobrinha de contribuições

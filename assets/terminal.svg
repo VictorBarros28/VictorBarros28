@@ -2,16 +2,16 @@
 <style>text{font:14px 'JetBrains Mono','SFMono-Regular',Consolas,monospace;white-space:pre}.l0{opacity:0;animation:k0 16.0s infinite}@keyframes k0{0%,3.75%{opacity:0;transform:translateX(-6px)}5.25%,96%{opacity:1;transform:none}100%{opacity:0}}.l1{opacity:0;animation:k1 16.0s infinite}@keyframes k1{0%,9.38%{opacity:0;transform:translateX(-6px)}10.88%,96%{opacity:1;transform:none}100%{opacity:0}}.l2{opacity:0;animation:k2 16.0s infinite}@keyframes k2{0%,15.00%{opacity:0;transform:translateX(-6px)}16.50%,96%{opacity:1;transform:none}100%{opacity:0}}.l3{opacity:0;animation:k3 16.0s infinite}@keyframes k3{0%,20.62%{opacity:0;transform:translateX(-6px)}22.12%,96%{opacity:1;transform:none}100%{opacity:0}}.l4{opacity:0;animation:k4 16.0s infinite}@keyframes k4{0%,26.25%{opacity:0;transform:translateX(-6px)}27.75%,96%{opacity:1;transform:none}100%{opacity:0}}.l5{opacity:0;animation:k5 16.0s infinite}@keyframes k5{0%,31.87%{opacity:0;transform:translateX(-6px)}33.38%,96%{opacity:1;transform:none}100%{opacity:0}}.l6{opacity:0;animation:k6 16.0s infinite}@keyframes k6{0%,37.50%{opacity:0;transform:translateX(-6px)}39.00%,96%{opacity:1;transform:none}100%{opacity:0}}.l7{opacity:0;animation:k7 16.0s infinite}@keyframes k7{0%,43.12%{opacity:0;transform:translateX(-6px)}44.62%,96%{opacity:1;transform:none}100%{opacity:0}}.l8{opacity:0;animation:k8 16.0s infinite}@keyframes k8{0%,48.75%{opacity:0;transform:translateX(-6px)}50.25%,96%{opacity:1;transform:none}100%{opacity:0}}.l9{opacity:0;animation:k9 16.0s infinite}@keyframes k9{0%,54.37%{opacity:0;transform:translateX(-6px)}55.87%,96%{opacity:1;transform:none}100%{opacity:0}}.l10{opacity:0;animation:k10 16.0s infinite}@keyframes k10{0%,60.00%{opacity:0;transform:translateX(-6px)}61.50%,96%{opacity:1;transform:none}100%{opacity:0}}</style>
 <rect width="820" height="356" rx="12" fill="#0d1117" stroke="#30363d"/>
 <circle cx="22" cy="20" r="6" fill="#ff5f56"/><circle cx="42" cy="20" r="6" fill="#ffbd2e"/><circle cx="62" cy="20" r="6" fill="#27c93f"/>
-<text x="410.0" y="25" text-anchor="middle" fill="#8b949e" style="font-size:12px">victor@prod: ~/automacoes — celery</text>
-<text class="l0" x="24" y="62" fill="#e6edf3"><tspan fill="#e11d48">$ </tspan>docker compose -f docker-compose.prod.yaml up -d</text>
-<text class="l1" x="24" y="88" fill="#3fb950">✔ web   ✔ celery-worker   ✔ celery-beat   ✔ redis   ✔ postgres</text>
-<text class="l2" x="24" y="114" fill="#e6edf3"><tspan fill="#e11d48">$ </tspan>celery -A config worker -Q andamentos --concurrency 4</text>
-<text class="l3" x="24" y="140" fill="#8b949e">[tasks] rodada_andamentos · conferir_na_fonte · destravar_rodadas</text>
-<text class="l4" x="24" y="166" fill="#79c0ff">→ login SSO no portal do cliente ........ ok (TOTP)</text>
-<text class="l5" x="24" y="192" fill="#79c0ff">→ planilha #15 · 9.884 itens · Elaw ↔ portal do tribunal</text>
-<text class="l6" x="24" y="218" fill="#d29922">⚠ TimeoutException no portal → retry 2/3 · sessão renovada</text>
+<text x="410.0" y="25" text-anchor="middle" fill="#8b949e" style="font-size:12px">victor@dev: ~ — zsh</text>
+<text class="l0" x="24" y="62" fill="#e6edf3"><tspan fill="#e11d48">$ </tspan>git commit -m &quot;feat: retentativa com backoff exponencial&quot;</text>
+<text class="l1" x="24" y="88" fill="#e6edf3"><tspan fill="#e11d48">$ </tspan>docker compose -f docker-compose.prod.yaml up -d --build</text>
+<text class="l2" x="24" y="114" fill="#3fb950">✔ api   ✔ worker   ✔ beat   ✔ redis   ✔ postgres</text>
+<text class="l3" x="24" y="140" fill="#e6edf3"><tspan fill="#e11d48">$ </tspan>celery -A config worker -Q automacoes --concurrency 4</text>
+<text class="l4" x="24" y="166" fill="#79c0ff">→ autenticação SSO + TOTP ................ ok</text>
+<text class="l5" x="24" y="192" fill="#79c0ff">→ lote recebido · 9.884 itens · idempotente por hash</text>
+<text class="l6" x="24" y="218" fill="#d29922">⚠ TimeoutException → retry 2/3 (backoff 8s)</text>
 <text class="l7" x="24" y="244" fill="#e6edf3">→ processando  ███████████████░░░░░  7.412 / 9.884</text>
-<text class="l8" x="24" y="270" fill="#3fb950">✔ monitor-signals → RPA Monitor (WebSocket) · item_ok</text>
-<text class="l9" x="24" y="296" fill="#3fb950">✔ conferência na fonte: 9.884 fonte · 9.884 robô · 0 divergências</text>
+<text class="l8" x="24" y="270" fill="#3fb950">✔ evento publicado no monitor via WebSocket</text>
+<text class="l9" x="24" y="296" fill="#3fb950">✔ reconciliação com a fonte: 0 divergências</text>
 <text class="l10" x="24" y="322" fill="#e11d48"><tspan fill="#e11d48">$ </tspan>█</text>
 </svg>
